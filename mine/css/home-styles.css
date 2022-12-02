@@ -1,0 +1,147 @@
+body {
+  scroll-behavior: smooth;
+}
+.loader-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.loader {
+  background-image: url("../../media/logo.png"); 
+  background-size: 100%;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  animation: cargar 1s backwards infinite;
+  animation-direction: alternate;
+}
+.icon-btn {
+  filter: invert(100%);
+}
+.ico-btn {
+  filter: invert(100%);
+  display: none;
+}
+.ico-btn-active {
+  filter: invert(100%);
+  display: block;
+}
+article {
+  cursor: pointer;
+}
+article:hover {
+  transform: scale(1.04);
+  transition: .2s;
+}
+.carta1, .carta2 {
+  transition: all .3s;
+  margin: 0 auto;
+  background-color: #1134;
+}
+.imagen1, .imagen2 {
+  height: 400px;
+}
+.carta1:hover, .carta2:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all .3s;
+}
+.imagen1, .imagen3 {
+  display: none !important;
+}
+.imagen1-active, .imagen3-active {
+  display: block !important;
+}
+.imagen2, .imagen4 {
+  display: block !important;
+}
+.imagen2-active, .imagen4-active {
+  display: none !important;
+}
+.icon-btn-active {
+   filter: invert(100%);
+  display: none;
+}
+.borde {
+  animation: borde 4s ease-in-out alternate infinite;
+  border-radius: 4px;
+}
+.ofert {
+  animation: pintar 5s ease-in-out alternate infinite;
+  outline: 1px solid #004;
+}
+.footer-color {
+ outline: 1px solid #999;
+}
+.footer-link {
+ list-style: none;
+}
+.link-footer {
+ color: #fff;
+ text-decoration: none;
+}
+.ico {
+  width: 30px;
+  filter: invert(100%);
+}
+.ico:hover {
+  filter: invert(50%);
+  width: 35px;
+}
+.logo-footer {
+ border-radius: 50%;
+ width: 100px;
+ height: 100px;
+}
+.footer-link {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media (min-width: 600px){
+
+.imagen1, .imagen2, .imagen3, .imagen4 {
+  height: 250px;
+}
+.footer-link {
+  margin: 20px 10px !important;
+  padding: 5px !important;
+}
+
+}
+
+@keyframes cargar {
+  0% {
+   transform: scale(1.1);
+  }
+  100% {
+   transform: scale(1.4);
+  }
+}
+
+@keyframes pintar {
+ 0% {
+   background-color: #0a0;
+ }
+ 100% {
+   background-color: #c00;
+ }
+}
+
+@keyframes borde {
+  0% {
+    outline: 2px dashed #0d0;    
+  }
+  100% {
+    outline: 2px dashed #f00;
+  }
+}

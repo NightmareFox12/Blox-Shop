@@ -1,0 +1,29 @@
+body {
+  background-image: url("../../media/fondoo.png");
+  background-size: 100vw 100vh;
+}
+li {
+  list-style: none;
+  color: #fff;
+}
+p {
+ color: #fff;
+ text-align: center;
+}
+img {
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+}
+.logo {
+ animation: gi 2s alternate infinite;
+}
+
+@keyframes gi {
+  0% {
+  	transform: scale(1);
+  }
+  100% {
+  	transform: scale(1.07);
+  }
+}
